@@ -1,0 +1,166 @@
+import random
+
+RO = 0#RED_OLIVE
+RB = 0#RED_BLUE
+OR = 0#OLIVE_RED
+BR = 0#BLUE_RED
+BO = 0#BLUE_OLIVER
+OB = 0#OLIVER_BLUE
+vfm = 0#VICTORYFORME
+vfms = 0#VICTORYFORMIKE
+list1 = [3,3,3,3,3,6]#RED
+list2 = [4,4,4,4,4,1]#OLIVE
+list3 = [3,3,3,3,3,6]#RED
+list4 = [5,5,5,5,2,2]#BLUE
+list5 = [5,5,5,5,2,2]#BLUE
+list6 = [4,4,4,4,4,1]#OLIVE
+print("_____________________________________________________")
+print("Please enter the right format in order to  check the information")
+print("Example:RED_BLUE→RB")
+inputreslut = input("Enter:")
+want = str(inputreslut)
+while  RO < 1000 and want == str("RO"):#choose RO
+    RO = RO + 1#Each roll → +1
+    player = random.sample(list1, 1)#You
+    ai = random.sample(list2, 1)#MIKE
+    print (player)#reslut
+    print (ai)#reslut
+    if player > ai :#YOUR number larger than MIKE's
+        print("You win")  # notice indentation
+        vfm = vfm + 1#I win+1
+    else:#MIKE's is higher than your
+        print("Grandpa Mike WIn")
+        vfms = vfms + 1#Mike win+1
+    if vfm < vfms:#The total victory of MIKE > ME
+        print ("Total win:" + str(vfm))
+        print ("Total mike sir win:" + str(vfms))
+        print("""
+    Mike have highly chance to win the game
+    """)
+    else:#The total victory of ME> MIKE
+        print ("Total win:" + str(vfm))
+        print ("Total mike sir win:" + str(vfms))
+        print("""
+    You have highly chance to win the game
+    """)
+while RB < 1000 and want == str("RB"):
+    RB = RB +1#Each roll → +1
+    player = random.sample(list3, 1)
+    ai = random.sample(list4, 1)
+    print (player)
+    print (ai)
+    if player > ai :
+        print("You win")  # notice indentation
+        vfm = vfm + 1
+    else:
+        print("Grandpa Mike WIn")
+        vfms = vfms + 1
+    if vfm < vfms:
+        print ("Total win:" + str(vfm))
+        print ("Total mike sir win:" + str(vfms))
+        print("""
+    Mike have highly chance to win the game
+    """)
+    else:
+        print ("Total win:" + str(vfm))
+        print ("Total mike sir win:" + str(vfms))
+        print("""
+    You have highly chance to win the game
+    """)
+while BR < 1000 and want == str("BR"):
+    BR = BR +1#Each roll → +1
+    player = random.sample(list4, 1)
+    ai = random.sample(list3, 1)
+    print (player)
+    print (ai)
+    if player > ai :
+        print("You win")  # notice indentation
+        vfm = vfm + 1
+    else:
+        print("Grandpa Mike WIn")
+        vfms = vfms + 1
+    if vfm < vfms:
+        print ("Total win:" + str(vfm))
+        print ("Total mike sir win:" + str(vfms))
+        print("""
+    Mike have highly chance to win the game
+    """)
+    else:
+        print ("Total win:" + str(vfm))
+        print ("Total mike sir win:" + str(vfms))
+        print("""
+    You have highly chance to win the game
+    """)
+while  OR < 1000 and want == str("OR"):
+    OR = OR + 1#Each roll → +1
+    player = random.sample(list2, 1)
+    ai = random.sample(list1, 1)
+    print (player)
+    print (ai)
+    if player > ai :
+        print("You win")  # notice indentation
+        vfm = vfm + 1
+    else:
+        print("Grandpa Mike WIn")
+        vfms = vfms + 1
+    if vfm < vfms:
+        print ("Total win:" + str(vfm))
+        print ("Total mike sir win:" + str(vfms))
+        print("""
+    Mike have highly chance to win the game
+    """)
+    else:
+        print ("Total win:" + str(vfm))
+        print ("Total mike sir win:" + str(vfms))
+        print("""
+    You have highly chance to win the game
+    """)
+while  BO < 1000 and want == str("BO"):
+    BO = BO + 1#Each roll → +1
+    player = random.sample(list5, 1)
+    ai = random.sample(list6, 1)
+    print (player)
+    print (ai)
+    if player > ai :
+        print("You win")  # notice indentation
+        vfm = vfm + 1
+    else:
+        print("Grandpa Mike WIn")
+        vfms = vfms + 1
+    if vfm < vfms:
+        print ("Total win:" + str(vfm))
+        print ("Total mike sir win:" + str(vfms))
+        print("""
+    Mike have highly chance to win the game
+    """)
+    else:
+        print ("Total win:" + str(vfm))
+        print ("Total mike sir win:" + str(vfms))
+        print("""
+    You have highly chance to win the game
+    """)
+while  OB < 1000 and want == str("OB"):
+    OB = OB + 1#Each roll → +1
+    player = random.sample(list6, 1)
+    ai = random.sample(list5, 1)
+    print (player)
+    print (ai)
+    if player > ai :
+        print("You win")  # notice indentation
+        vfm = vfm + 1
+    else:
+        print("Grandpa Mike WIn")
+        vfms = vfms + 1
+    if vfm < vfms:
+        print ("Total win:" + str(vfm))
+        print ("Total mike sir win:" + str(vfms))
+        print("""
+    Mike have highly chance to win the game
+    """)
+    else:
+        print ("Total win:" + str(vfm))
+        print ("Total mike sir win:" + str(vfms))
+        print("""
+    You have highly chance to win the game
+    """)
+
