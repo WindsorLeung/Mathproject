@@ -11,7 +11,7 @@ vfai = 0
 vfai2 = 0
 list1 = [3,3,3,3,3,6]#RED
 list2 = [4,4,4,4,4,1]#OLIVE
-list3 = [5,5,5,5,2,2]#BLUE
+list3 = [5,5,5,2,2,2]#BLUE
 print("_____________________________________________________")
 print("Please enter the right format in order to  check the information")
 print("Example:RED,BLUE,OLIVER→RBO")
