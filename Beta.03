@@ -1,0 +1,223 @@
+mport random
+
+RBO = 0
+ROB = 0
+BRO = 0
+BOR = 0
+ORB = 0
+OBR = 0
+vfm = 0
+vfai = 0
+vfai2 = 0
+list1 = [3,3,3,3,3,6]#RED
+list2 = [4,4,4,4,4,1]#OLIVE
+list3 = [5,5,5,5,2,2]#BLUE
+print("_____________________________________________________")
+print("Please enter the right format in order to  check the information")
+print("Example:RED,BLUE,OLIVER→RBO")
+inputreslut = input("Enter:")
+want = str(inputreslut)
+while  RBO < 1000 and want == str("RBO"):#choose RBO
+    RBO = RBO + 1#Each roll → +1
+    player = random.sample(list1, 1)#You(IstPerson)
+    ai = random.sample(list3, 1)#2ndPerson
+    ai2 = random.sample(list2, 1)#3rdPerson
+    print (player)#reslut
+    print (ai)#reslut
+    print(ai2)
+    if player > ai and player > ai2 :#YOUR number larger than MIKE's
+        print("You win")  # notice indentation
+        vfm = vfm + 1#I win+1
+    elif ai > player and ai> ai2:
+        print("2nd Person win")
+        vfai = vfai + 1#2p win+1
+    elif player == ai and player == ai2:
+        print("drawl")
+    elif ai2 > ai and ai2 > player:
+        print("3rd Person win")
+        vfai2 = vfai2 + 1
+    if vfm < vfai or vfm < vfai2 :#The total victory of ai > ME
+        print ("Total win:" + str(vfm))
+        print ("Total 2nd Person win:" + str(vfai))
+        print ("Total 3nd Person win:" + str(vfai2))
+        if vfai> vfai2:
+            print("2nd Person win")
+        else:
+            print("3rd Person win")
+    else:#The total victory of ME> AI
+        print ("Total win:" + str(vfm))
+        print ("Total 2nd Person win:" + str(vfai))
+        print ("Total 3nd Person win:" + str(vfai2))
+        print("""
+    You have highly chance to win the game
+    """)
+while  ROB < 1000 and want == str("ROB"):#choose ROB
+    ROB = ROB + 1#Each roll → +1
+    player = random.sample(list1, 1)#You(IstPerson)
+    ai2 = random.sample(list3, 1)#2ndPerson
+    ai = random.sample(list2, 1)#3rdPerson
+    print (player)#reslut
+    print (ai)#reslut
+    print(ai2)
+    if player > ai and player > ai2 :#YOUR number larger than MIKE's
+        print("You win")  # notice indentation
+        vfm = vfm + 1#I win+1
+    elif ai > player and ai > ai2:
+        print("2nd Person win")
+        vfai = vfai + 1#2p win+1
+    elif player == ai and player == ai2:
+        print("drawl")
+    elif ai2 > ai and ai2 > player :
+        print("3rd Person win")
+        vfai2 = vfai2 + 1
+    if vfm < vfai or vfm < vfai2 :#The total victory of ai > ME
+        print ("Total win:" + str(vfm))
+        print ("Total 2nd Person win:" + str(vfai))
+        print ("Total 3nd Person win:" + str(vfai2))
+        if vfai> vfai2:
+            print("2nd Person win")
+        else:
+            print("3rd Person win")
+    else:#The total victory of ME> AI
+        print ("Total win:" + str(vfm))
+        print ("Total 2nd Person win:" + str(vfai))
+        print ("Total 3nd Person win:" + str(vfai2))
+        print("""
+    You have highly chance to win the game
+    """)
+while  BRO < 1000 and want == str("BRO"):#choose BRO
+    BRO = BRO + 1#Each roll → +1
+    player = random.sample(list3, 1)#You(IstPerson)
+    ai = random.sample(list1, 1)#2ndPerson
+    ai2 = random.sample(list2, 1)#3rdPerson
+    print (player)#reslut
+    print (ai)#reslut
+    print(ai2)
+    if player > ai and player > ai2 :#YOUR number larger than MIKE's
+        print("You win")  # notice indentation
+        vfm = vfm + 1#I win+1
+    elif ai > player and ai > ai2:
+        print("2nd Person win")
+        vfai = vfai + 1#2p win+1
+    elif player == ai and player == ai2:
+        print("drawl")
+    elif ai2 > ai and ai2 > player :
+        print("3rd Person win")
+        vfai2 = vfai2 + 1
+    if vfm < vfai or vfm < vfai2 :#The total victory of ai > ME
+        print ("Total win:" + str(vfm))
+        print ("Total 2nd Person win:" + str(vfai))
+        print ("Total 3nd Person win:" + str(vfai2))
+        if vfai> vfai2:
+            print("2nd Person win")
+        else:
+            print("3rd Person win")
+    else:#The total victory of ME> AI
+        print ("Total win:" + str(vfm))
+        print ("Total 2nd Person win:" + str(vfai))
+        print ("Total 3nd Person win:" + str(vfai2))
+        print("""
+    You have highly chance to win the game
+    """)
+while  BOR < 1000 and want == str("BOR"):#choose BOR
+    BOR = BOR + 1#Each roll → +1
+    player = random.sample(list3, 1)#You(IstPerson)
+    ai = random.sample(list2, 1)#2ndPerson
+    ai2 = random.sample(list1, 1)#3rdPerson
+    print (player)#reslut
+    print (ai)#reslut
+    print(ai2)
+    if player > ai and player > ai2 :#YOUR number larger than MIKE's
+        print("You win")  # notice indentation
+        vfm = vfm + 1#I win+1
+    elif ai > player and ai > ai2:
+        print("2nd Person win")
+        vfai = vfai + 1#2p win+1
+    elif player == ai and player == ai2:
+        print("drawl")
+    elif ai2 > ai and ai2 > player :
+        print("3rd Person win")
+        vfai2 = vfai2 + 1
+    if vfm < vfai or vfm < vfai2 :#The total victory of ai > ME
+        print ("Total win:" + str(vfm))
+        print ("Total 2nd Person win:" + str(vfai))
+        print ("Total 3nd Person win:" + str(vfai2))
+        if vfai> vfai2:
+            print("2nd Person win")
+        else:
+            print("3rd Person win")
+    else:#The total victory of ME> AI
+        print ("Total win:" + str(vfm))
+        print ("Total 2nd Person win:" + str(vfai))
+        print ("Total 3nd Person win:" + str(vfai2))
+        print("""
+    You have highly chance to win the game
+    """)
+while  ORB < 1000 and want == str("ORB"):#choose ORB
+    ORB = ORB + 1#Each roll → +1
+    player = random.sample(list2, 1)#You(IstPerson)
+    ai = random.sample(list1, 1)#2ndPerson
+    ai2 = random.sample(list3, 1)#3rdPerson
+    print (player)#reslut
+    print (ai)#reslut
+    print(ai2)
+    if player > ai and player > ai2 :#YOUR number larger than MIKE's
+        print("You win")  # notice indentation
+        vfm = vfm + 1#I win+1
+    elif ai > player and ai > ai2:
+        print("2nd Person win")
+        vfai = vfai + 1#2p win+1
+    elif player == ai and player == ai2:
+        print("drawl")
+    elif ai2 > ai and ai2 > player :
+        print("3rd Person win")
+        vfai2 = vfai2 + 1
+    if vfm < vfai or vfm < vfai2 :#The total victory of ai > ME
+        print ("Total win:" + str(vfm))
+        print ("Total 2nd Person win:" + str(vfai))
+        print ("Total 3nd Person win:" + str(vfai2))
+        if vfai> vfai2:
+            print("2nd Person win")
+        else:
+            print("3rd Person win")
+    else:#The total victory of ME> AI
+        print ("Total win:" + str(vfm))
+        print ("Total 2nd Person win:" + str(vfai))
+        print ("Total 3nd Person win:" + str(vfai2))
+        print("""
+    You have highly chance to win the game
+    """)
+while  OBR < 1000 and want == str("OBR"):#choose OBR
+    OBR = OBR + 1#Each roll → +1
+    player = random.sample(list2, 1)#You(IstPerson)
+    ai = random.sample(list3, 1)#2ndPerson
+    ai2 = random.sample(list1, 1)#3rdPerson
+    print (player)#reslut
+    print (ai)#reslut
+    print(ai2)
+    if player > ai and player > ai2 :#YOUR number larger than MIKE's
+        print("You win")  # notice indentation
+        vfm = vfm + 1#I win+1
+    elif ai > player and ai > ai2:
+        print("2nd Person win")
+        vfai = vfai + 1#2p win+1
+    elif player == ai and player == ai2:
+        print("drawl")
+    elif ai2 > ai and ai2 > player :
+        print("3rd Person win")
+        vfai2 = vfai2 + 1
+    if vfm < vfai or vfm < vfai2 :#The total victory of ai > ME
+        print ("Total win:" + str(vfm))
+        print ("Total 2nd Person win:" + str(vfai))
+        print ("Total 3nd Person win:" + str(vfai2))
+        if vfai> vfai2:
+            print("2nd Person win")
+        else:
+            print("3rd Person win")
+    else:#The total victory of ME> AI
+        print ("Total win:" + str(vfm))
+        print ("Total 2nd Person win:" + str(vfai))
+        print ("Total 3nd Person win:" + str(vfai2))
+        print("""
+    You have highly chance to win the game
+    """)
